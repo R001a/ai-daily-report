@@ -36,7 +36,6 @@
             overflow-x: hidden;
         }
         
-        /* Animated Background */
         .bg-grid {
             position: fixed;
             top: 0;
@@ -89,7 +88,6 @@
             z-index: 1;
         }
         
-        /* Header */
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -138,7 +136,6 @@
             font-size: 0.9em;
         }
         
-        /* Stats Bar */
         .stats-bar {
             display: flex;
             justify-content: center;
@@ -190,7 +187,6 @@
             color: var(--text-secondary);
         }
         
-        /* Summary */
         .summary-section {
             background: linear-gradient(135deg, rgba(0, 245, 255, 0.1), rgba(168, 85, 247, 0.1));
             border: 1px solid var(--border-glow);
@@ -240,7 +236,6 @@
             line-height: 1.5;
         }
         
-        /* Category Navigation */
         .category-nav {
             display: flex;
             justify-content: center;
@@ -290,7 +285,6 @@
             font-family: 'JetBrains Mono', monospace;
         }
         
-        /* Category Sections */
         .category-section {
             margin-bottom: 30px;
             animation: fadeInUp 0.6s ease-out both;
@@ -364,7 +358,6 @@
             opacity: 0;
         }
         
-        /* News Cards */
         .news-card {
             background: var(--bg-card);
             border-radius: 16px;
@@ -484,7 +477,6 @@
             font-size: 1em;
         }
         
-        /* Footer */
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -497,7 +489,6 @@
             text-decoration: none;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 2em; }
             .stats-bar { gap: 10px; }
@@ -506,7 +497,6 @@
             .nav-btn { padding: 10px 16px; font-size: 0.85em; }
         }
         
-        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -536,7 +526,7 @@
             <h1>全球AI动态日报</h1>
             <div class="subtitle">
                 <span>🌍 汇聚全球AI资讯</span>
-                <span class="date-badge">2026.04.04</span>
+                <span class="date-badge">2026.04.05</span>
             </div>
         </header>
         
@@ -544,28 +534,28 @@
             <div class="stat-card">
                 <span class="stat-icon">📰</span>
                 <div class="stat-info">
-                    <div class="stat-number">21</div>
+                    <div class="stat-number">18</div>
                     <div class="stat-label">条资讯</div>
                 </div>
             </div>
             <div class="stat-card">
                 <span class="stat-icon">🇨🇳</span>
                 <div class="stat-info">
-                    <div class="stat-number">9</div>
+                    <div class="stat-number">10</div>
                     <div class="stat-label">国内动态</div>
                 </div>
             </div>
             <div class="stat-card">
                 <span class="stat-icon">🌍</span>
                 <div class="stat-info">
-                    <div class="stat-number">12</div>
+                    <div class="stat-number">8</div>
                     <div class="stat-label">国外动态</div>
                 </div>
             </div>
             <div class="stat-card">
                 <span class="stat-icon">🔥</span>
                 <div class="stat-info">
-                    <div class="stat-number">5</div>
+                    <div class="stat-number">7</div>
                     <div class="stat-label">热门话题</div>
                 </div>
             </div>
@@ -575,51 +565,50 @@
             <h2>📋 今日要闻速览</h2>
             <div class="summary-grid">
                 <div class="summary-item">
-                    <strong>🚀 24小时3款AI模型齐发</strong>
-                    <p>阿里千问3.6-Plus、智谱GLM-5V-Turbo、谷歌Gemma 4同日发布，中美AI模型竞赛白热化</p>
+                    <strong>🚀 谷歌发布Gemma 4开源模型</strong>
+                    <p>谷歌DeepMind发布Gemma 4系列四款开源模型，采用Apache 2.0许可证，31B参数模型在Arena AI榜单排名第三，超越20倍参数量模型</p>
+                </div>
+                <div class="summary-item">
+                    <strong>🇨🇳 阿里Qwen3.6-Plus登顶全球调用榜</strong>
+                    <p>阿里千问Qwen3.6-Plus发布仅2天，在OpenRouter平台日调用量突破1.4万亿Token，刷新单日单模型最高纪录</p>
+                </div>
+                <div class="summary-item">
+                    <strong>🧠 智谱发布GLM-5V-Turbo视觉编程模型</strong>
+                    <p>智谱AI发布国内首个原生多模态Coding基座模型，能直接从设计稿、网页截图生成可运行代码，Design2Code基准达94.8分</p>
                 </div>
                 <div class="summary-item">
                     <strong>💰 OpenAI完成1220亿美元融资</strong>
-                    <p>刷新全球私募融资纪录，估值达8520亿美元，亚马逊500亿美元领投</p>
+                    <p>OpenAI完成史上最大规模私人融资1220亿美元，估值达8520亿美元，亚马逊、英伟达、软银领投</p>
                 </div>
                 <div class="summary-item">
-                    <strong>🔥 Q1全球创投2970亿美元创新高</strong>
-                    <p>AI占80%达2420亿美元，OpenAI/Anthropic/xAI/Waymo四轮贡献超63%</p>
+                    <strong>🚀 SpaceX-xAI合并推进1.75万亿美元IPO</strong>
+                    <p>SpaceX以1.25万亿美元收购xAI，计划进行史上最大IPO，估值目标1.75万亿美元，整合Starlink与Grok AI基础设施</p>
                 </div>
                 <div class="summary-item">
-                    <strong>🛡️ Mercor遭供应链攻击泄露4TB数据</strong>
-                    <p>百亿美金AI招聘公司Mercor因LiteLLM后门被攻破，Lapsus$声称窃取源代码</p>
-                </div>
-                <div class="summary-item">
-                    <strong>🚗 ChatGPT登录Apple CarPlay</strong>
-                    <p>iOS 26.4开放语音AI入口，ChatGPT成为首款车载AI对话应用，Siri将迎LLM升级</p>
-                </div>
-                <div class="summary-item">
-                    <strong>⚖️ 中国加速AI立法</strong>
-                    <p>司法部明确表态加快AI领域立法，"打造智能经济新形态"首入政府工作报告</p>
+                    <strong>📜 中国发布AI伦理审查新规</strong>
+                    <p>工信部等十部门联合印发《人工智能科技伦理审查与服务办法》，构建三级审查体系，为AI发展划定安全红线</p>
                 </div>
             </div>
         </section>
         
         <nav class="category-nav">
             <button class="nav-btn active" data-category="新品">
-                <span class="icon">🚀</span> 新品动态 <span class="count">4</span>
+                <span class="icon">🚀</span> 新品动态 <span class="count">5</span>
             </button>
             <button class="nav-btn" data-category="行业">
-                <span class="icon">📊</span> 行业资讯 <span class="count">5</span>
+                <span class="icon">📊</span> 行业资讯 <span class="count">4</span>
             </button>
             <button class="nav-btn" data-category="商业">
-                <span class="icon">💼</span> 商业运用 <span class="count">4</span>
+                <span class="icon">💼</span> 商业运用 <span class="count">3</span>
             </button>
             <button class="nav-btn" data-category="创业">
-                <span class="icon">💰</span> 创业模式 <span class="count">4</span>
+                <span class="icon">💰</span> 创业模式 <span class="count">3</span>
             </button>
             <button class="nav-btn" data-category="讨论">
-                <span class="icon">💬</span> 讨论点 <span class="count">4</span>
+                <span class="icon">💬</span> 讨论点 <span class="count">3</span>
             </button>
         </nav>
         
-        <!-- 新品动态 -->
         <section class="category-section" id="新品">
             <div class="category-header" onclick="toggleCategory('新品')">
                 <div class="category-title">
@@ -632,15 +621,15 @@
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国内">国内</span>
+                            <span class="tag 国外">国外</span>
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">阿里发布千问3.6-Plus：号称"中国编程能力最强模型"</h3>
-                    <p class="news-desc">阿里云正式发布Qwen3.6-Plus，千问3.6系列首款模型。相较于前代整体性能显著提升，官方称为目前"中国编程能力最强的模型"。已上架阿里云百炼平台，开发者可通过API调用。</p>
+                    <h3 class="news-title">谷歌发布Gemma 4开源模型系列</h3>
+                    <p class="news-desc">谷歌DeepMind发布Gemma 4系列四款开源模型（2B/4B/26B MoE/31B），采用Apache 2.0许可证。31B参数Dense模型在Chatbot Arena AI榜单排名第三，超越参数量大20倍的模型。支持140+语言、256K上下文窗口，专为Agentic工作流和编程优化。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7624069847411868223/" target="_blank">观察者网</a>
+                        <a href="https://datanorth.ai/news/google-releases-gemma-4-open-models" target="_blank">DataNorth AI</a>
                     </div>
                 </article>
                 
@@ -651,11 +640,26 @@
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">智谱发布GLM-5V-Turbo：全球首个原生多模态编程大模型</h3>
-                    <p class="news-desc">智谱AI发布GLM-5V-Turbo多模态Coding基座模型，采用原生多模态融合架构，支持200k上下文窗口，Design2Code基准测试94.8分超越竞争对手。可直接从设计稿、网页截图生成可运行代码，已上线智谱MaaS平台。</p>
+                    <h3 class="news-title">阿里千问Qwen3.6-Plus发布：智能体编程能力跃升</h3>
+                    <p class="news-desc">阿里巴巴发布千问3.6系列首款模型Qwen3.6-Plus，主打智能体Agent、编程Coding和工具调用能力。在SWE-bench、Terminal-Bench 2.0、Claw-Eval等评测中超越参数量两至三倍的GLM-5、Kimi-K2.5等模型。支持100万字符上下文窗口，上线阿里云百炼与悟空平台。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://blog.csdn.net/ld326/article/details/159773858" target="_blank">CSDN</a>
+                        <a href="https://www.alibabacloud.com/blog/alibaba-unveils-qwen-3-6-plus-to-accelerate-agentic-ai-deployment-for-enterprises-and-alibaba-s-ai-applications_603000" target="_blank">阿里云博客</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-header">
+                        <div class="news-tags">
+                            <span class="tag 国内">国内</span>
+                            <span class="tag new">NEW</span>
+                        </div>
+                    </div>
+                    <h3 class="news-title">智谱AI发布GLM-5V-Turbo视觉编程模型</h3>
+                    <p class="news-desc">智谱AI发布国内首个原生多模态Coding基座模型GLM-5V-Turbo，支持将设计稿、网页截图直接生成可运行代码。在Design2Code基准测试以94.8分超越竞品，上下文窗口扩展至200K，已上线智谱MaaS平台与chat.z.ai，深度优化AutoClaw/Claude Code场景。</p>
+                    <div class="news-source">
+                        <span class="icon">🔗</span>
+                        <a href="https://docs.bigmodel.cn/cn/update/new-releases" target="_blank">智谱AI开放文档</a>
                     </div>
                 </article>
                 
@@ -663,15 +667,13 @@
                     <div class="news-header">
                         <div class="news-tags">
                             <span class="tag 国外">国外</span>
-                            <span class="tag 开源">开源</span>
-                            <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">谷歌发布Gemma 4：迄今"最智能"开源模型，Apache 2.0协议</h3>
-                    <p class="news-desc">Google发布Gemma 4系列，基于Gemini 3技术架构构建，共4种规格适配从移动设备到加速器等不同硬件环境。支持端侧多模态和智能体工作流，采用Apache 2.0商用友好协议，主打手机本地离线运行。</p>
+                    <h3 class="news-title">微软发布MAI系列基础模型</h3>
+                    <p class="news-desc">微软在Microsoft Foundry平台发布三款自研AI模型：MAI-Transcribe-1（语音识别，支持25语言，GPU成本降低50%）、MAI-Voice-1（语音生成，1秒生成60秒音频）、MAI-Image-2（图像生成，最高1024×1024分辨率）。这是微软首次完全自主开发的基础模型。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7624470052368024104/" target="_blank">央视新闻</a>
+                        <a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-mai-transcribe-1-mai-voice-1-and-mai-image-2-in-microsoft-foundry/4507787" target="_blank">Microsoft Tech Community</a>
                     </div>
                 </article>
                 
@@ -681,17 +683,16 @@
                             <span class="tag 国外">国外</span>
                         </div>
                     </div>
-                    <h3 class="news-title">微软发布MAI系列三款自研模型并全面商用</h3>
-                    <p class="news-desc">微软推出MAI-Transcribe-1、MAI-Voice-1与MAI-Image-2三款自研模型，仅通过Azure Foundry和MAI Playground（仅限美国）提供。与谷歌端侧开源路线形成鲜明对比，走向云端商用封闭生态。</p>
+                    <h3 class="news-title">Anthropic Claude Mythos泄露：最强模型曝光</h3>
+                    <p class="news-desc">Anthropic遭遇数据泄露，下一代旗舰模型Claude Mythos详细信息曝光。官方确认训练已完成，正与早期访问客户测试，定位"迄今最强大的模型"，代表"能力的阶梯式飞跃"。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://www.thurrott.com/a-i/334478/microsoft-and-google-launch-new-ai-models" target="_blank">Thurrott</a>
+                        <a href="https://www.fortune.com/2026/03/27/anthropic-data-leak-reveals-powerful-secret-mythos-ai-model/" target="_blank">Fortune</a>
                     </div>
                 </article>
             </div>
         </section>
         
-        <!-- 行业资讯 -->
         <section class="category-section" id="行业">
             <div class="category-header" onclick="toggleCategory('行业')">
                 <div class="category-title">
@@ -704,78 +705,62 @@
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
+                            <span class="tag 国内">国内</span>
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">OpenAI完成1220亿美元融资，估值8520亿美元创纪录</h3>
-                    <p class="news-desc">OpenAI刷新全球私募融资单笔最高纪录，亚马逊500亿美元领投，英伟达与软银各注资300亿美元。估值已超过特斯拉（约8000亿美元），距万亿美元大关一步之遥，同时向个人投资者开放。</p>
+                    <h3 class="news-title">中国大模型调用量首超美国实现历史性反超</h3>
+                    <p class="news-desc">2026年3月中国大模型调用量首次超越美国，实现历史性反超。全球Token日均调用量突破140万亿，两年增长超千倍。全球调用量TOP10中中国占据6席，标志着中国AI应用进入规模化爆发阶段。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7623678902904406569/" target="_blank">经济观察网</a>
+                        <a href="https://c.m.163.com/news/a/KP1NROT9055622UQ.html" target="_blank">网易</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">Q1全球创投2970亿美元创历史新高，AI占80%</h3>
-                    <p class="news-desc">Crunchbase数据显示，2026年Q1全球初创投资达2970亿美元，接近2025年全年70%。AI初创获2420亿美元占总额80%，OpenAI/Anthropic/xAI/Waymo四轮贡献1880亿占63%。美国VC达2670亿美元创本国纪录。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://savedelete.com/article/startup-funding-shatters-all-records-in-q1-2026-297-billion-driven-by-ai-mega-rounds/" target="_blank">SaveDelete</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国内">国内</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">中国加速人工智能立法进程</h3>
-                    <p class="news-desc">2026年全国两会"打造智能经济新形态"首入政府工作报告，司法部部长贺荣明确表态加快AI领域立法。中国AI监管框架在算法备案、深度合成等规则基础上进一步扩展。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="http://www.rmzxw.com.cn/c/2026-04-03/3896369.shtml?n2m=1" target="_blank">人民政协网</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">白宫发布国家AI政策框架，推动联邦统一监管</h3>
-                    <p class="news-desc">特朗普政府发布国家AI政策框架，呼吁国会优先于州级AI法规。参议员Marsha Blackburn同步推出291页TRUMP AMERICA AI Act草案，为迄今最全面联邦AI立法提案。加州SB 942平台透明度义务将于8月生效。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://www.mofo.com/resources/insights/260402-trump-administration-releases-national-ai-policy-framework" target="_blank">Morrison Foerster</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国内">国内</span>
                             <span class="tag 硬件">硬件</span>
                         </div>
                     </div>
-                    <h3 class="news-title">中兴联合字节跳动研发新一代豆包AI手机</h3>
-                    <p class="news-desc">中兴通讯联合字节跳动研发新一代豆包AI手机，预计2026年Q2发布。将实现"AI代为操作"交互模式，端侧AI能力进一步强化。</p>
+                    <h3 class="news-title">华为昇腾950PR芯片量产：单卡算力达国际旗舰2.87倍</h3>
+                    <p class="news-desc">华为昇腾950PR芯片正式量产，单卡算力达国际主流旗舰H20的2.87倍，多模态生成速度提升60%。国产AI芯片实现重大突破，打破海外算力垄断格局。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://gitcode.csdn.net/69cdb9dc54b52172bc665b7d.html" target="_blank">CSDN</a>
+                        <a href="http://m.toutiao.com/group/7622062654324884031/" target="_blank">太平洋电脑网</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-header">
+                        <div class="news-tags">
+                            <span class="tag 开源">开源</span>
+                        </div>
+                    </div>
+                    <h3 class="news-title">FlagOS 2.0发布：支持18家厂商32款AI芯片</h3>
+                    <p class="news-desc">北京智源人工智能研究院联合发布FlagOS 2.0，对18家厂商、32款AI芯片实现全场景支持，推动AI软件跨芯片通用运行，解决芯片架构碎片化问题。</p>
+                    <div class="news-source">
+                        <span class="icon">🔗</span>
+                        <a href="http://m.toutiao.com/group/7622610358372549156/" target="_blank">新华网</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-header">
+                        <div class="news-tags">
+                            <span class="tag 国外">国外</span>
+                        </div>
+                    </div>
+                    <h3 class="news-title">NVIDIA GTC 2026发布企业级AI Agent平台</h3>
+                    <p class="news-desc">NVIDIA在GTC 2026大会上推出开源Agent Toolkit，联合Adobe、Salesforce、SAP等17家企业巨头，提供NemoClaw运行时、AI-Q蓝图和Nemotron模型家族，打造安全的企业级AI Agent开发平台。</p>
+                    <div class="news-source">
+                        <span class="icon">🔗</span>
+                        <a href="https://blog.csdn.net/debug_fan/article/details/159835837" target="_blank">CSDN</a>
                     </div>
                 </article>
             </div>
         </section>
         
-        <!-- 商业运用 -->
         <section class="category-section" id="商业">
             <div class="category-header" onclick="toggleCategory('商业')">
                 <div class="category-title">
@@ -788,29 +773,14 @@
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                            <span class="tag new">NEW</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">ChatGPT登录Apple CarPlay，成首款车载AI对话应用</h3>
-                    <p class="news-desc">OpenAI随iOS 26.4更新将ChatGPT带入CarPlay，支持语音对话。Siri控制车辆功能，ChatGPT负责生成式对话，分工明确。传闻iOS 27将基于Gemini打造LLM版Siri，AI车载竞争升温。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://winbuzzer.com/2026/04/01/openai-chatgpt-apple-carplay-voice-hands-free-xcxwbn/" target="_blank">WinBuzzer</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
                             <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">阿里发布Wan2.7-Image图像生成模型</h3>
-                    <p class="news-desc">阿里巴巴发布Wan2.7-Image，采用生成与理解统一架构，支持虚拟形象捏脸定制、调色盘精准色彩迁移、最高3K token超长文本渲染。AI图像生成从简单扩散迈向精细化可控生成。</p>
+                    <h3 class="news-title">端侧AI爆发：小米、字节加速手机智能体落地</h3>
+                    <p class="news-desc">2026年是AI Agent规模化落地元年，小米、字节（豆包）加速手机终端AI智能体落地，AI从云端走向随身。企业级AI Agent覆盖销售、财务、供应链、客服全流程，信贷审批从3天缩至15分钟，设备故障率降30%。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://gitcode.csdn.net/69cdb9dc54b52172bc665b7d.html" target="_blank">CSDN</a>
+                        <a href="https://caifuhao.eastmoney.com/news/20260329161115896682340" target="_blank">东方财富</a>
                     </div>
                 </article>
                 
@@ -820,11 +790,11 @@
                             <span class="tag 国外">国外</span>
                         </div>
                     </div>
-                    <h3 class="news-title">IBM 11项AI方案获AWS认证，企业AI部署加速</h3>
-                    <p class="news-desc">IBM宣布11项AI产品通过AWS战略协作认证，标志着IBM Watsonx平台与AWS基础设施的深度融合。企业级AI部署正从实验走向规模化生产。</p>
+                    <h3 class="news-title">Chrome AI功能扩展至印度、新西兰、加拿大</h3>
+                    <p class="news-desc">Google将Chrome的AI功能扩展至更多地区，包括AI驱动标签页整理、智能搜索增强、生成式AI辅助写作。标志Google将AI浏览器能力推向全球市场。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://newsroom.ibm.com/press-releases-artificial-intelligence" target="_blank">IBM Newsroom</a>
+                        <a href="https://blog.google/intl/en-in/products/expanding-chromes-ai-experiences-to-india-new-zealand-and-canada/" target="_blank">Google Blog</a>
                     </div>
                 </article>
                 
@@ -834,17 +804,16 @@
                             <span class="tag 国外">国外</span>
                         </div>
                     </div>
-                    <h3 class="news-title">Gemini for Business深度整合NotebookLM与Skills</h3>
-                    <p class="news-desc">Google正在Gemini for Business中深度集成NotebookLM和预置Skills能力。企业用户将获得更强大的知识管理和自动化工作流支持，AI办公助手日趋成熟。</p>
+                    <h3 class="news-title">SoundHound推出边缘Agentic AI平台</h3>
+                    <p class="news-desc">SoundHound推出边缘设备版Agentic AI平台，能"看、听、自主行动"，直接部署在汽车、餐厅、工厂等场景，边缘AI商业化加速。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://www.testingcatalog.com/tag/gemini/" target="_blank">TestingCatalog</a>
+                        <a href="https://blog.csdn.net/qq_34252622/article/details/159381072" target="_blank">CSDN</a>
                     </div>
                 </article>
             </div>
         </section>
         
-        <!-- 创业模式 -->
         <section class="category-section" id="创业">
             <div class="category-header" onclick="toggleCategory('创业')">
                 <div class="category-title">
@@ -857,14 +826,14 @@
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
+                            <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">基础AI初创Q1融资1780亿美元，四家巨头瓜分1880亿</h3>
-                    <p class="news-desc">2026年Q1基础AI融资达1780亿美元。OpenAI（1220亿）、Anthropic（300亿）、xAI（200亿）、Waymo（160亿）四轮巨额融资占总额63%以上，头部效应极度集中。</p>
+                    <h3 class="news-title">Q1全球AI风投60%流向中国</h3>
+                    <p class="news-desc">2026年Q1全球AI风投格局重塑：60%流向中国，美国仅30%。中国成AI投资主战场，资本押注中国AI企业。OpenAI同期完成1220亿美元融资，估值达8520亿美元。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://www.thetechedvocate.org/foundational-ai-funding-soars-to-178-billion-in-q1-2026-marking-unprecedented-growth/" target="_blank">TechEdvocate</a>
+                        <a href="https://caifuhao.eastmoney.com/news/20260329161115896682340" target="_blank">东方财富</a>
                     </div>
                 </article>
                 
@@ -874,50 +843,35 @@
                             <span class="tag 国外">国外</span>
                         </div>
                     </div>
-                    <h3 class="news-title">Spellbook获4000万美元债务融资，拟收购5家法律AI竞品</h3>
-                    <p class="news-desc">多伦多法律AI创企Spellbook获4000万美元债务融资，预计ARR将达1亿美元。计划两年内收购约5家小型竞品，利用并购加速法律AI市场整合。</p>
+                    <h3 class="news-title">OpenAI完成1220亿美元史上最大私人融资</h3>
+                    <p class="news-desc">OpenAI完成1220亿美元融资，估值8520亿美元，为史上最大私人融资轮。亚马逊、英伟达、软银领投，微软继续跟投。资金将用于扩展五云提供商、五芯片平台和多数据中心基础设施。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://betakit.com/on-track-to-hit-100-million-usd-arr-spellbook-partners-with-canadian-bar-association/" target="_blank">BetaKit</a>
+                        <a href="https://www.vktr.com/ai-news/openai-raises-122-billion-in-largest-private-funding-round-ever/" target="_blank">VKTR</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
+                            <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">Google开放2026印度AI创业加速器申请</h3>
-                    <p class="news-desc">Google宣布开放2026印度AI创业加速器申请，瞄准印度蓬勃发展的AI创业生态。印度Sarvam AI等本土大模型公司获得Lightspeed等顶级VC支持，估值快速攀升。</p>
+                    <h3 class="news-title">广州发布AI"施工图"：2030年万亿级产业</h3>
+                    <p class="news-desc">广州发布人工智能高质量发展"施工图"，目标到2030年形成万亿级产业生态圈，打造全球垂类模型产业高地，推动AI技术与制造业深度融合。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://indusbusinessjournal.com/2026/03/google-opens-applications-for-2026-india-ai-startup-accelerator/" target="_blank">Indus Business Journal</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">Agentic AI与多模态AI成2026创业两大主赛道</h3>
-                    <p class="news-desc">行业分析显示，2026年AI创业两大热门方向：能自主规划执行多步工作流的Agentic AI，以及整合文本/图像/音频的多模态AI。两者正从概念验证走向商业化落地。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://www.thetechedvocate.org/the-future-of-ai-automation-trends-shaping-startups-in-2026/" target="_blank">TechEdvocate</a>
+                        <a href="https://c.m.163.com/news/a/KP1NROT9055622UQ.html" target="_blank">网易</a>
                     </div>
                 </article>
             </div>
         </section>
         
-        <!-- 讨论点 -->
         <section class="category-section" id="讨论">
             <div class="category-header" onclick="toggleCategory('讨论')">
                 <div class="category-title">
                     <span class="icon">💬</span>
-                    <h2>用户讨论点</h2>
+                    <h2>讨论点</h2>
                 </div>
                 <span class="toggle-icon">▼</span>
             </div>
@@ -926,68 +880,52 @@
                     <div class="news-header">
                         <div class="news-tags">
                             <span class="tag 国外">国外</span>
-                            <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">Mercor供应链攻击警示：开源AI工具链安全引热议</h3>
-                    <p class="news-desc">百亿美金AI招聘公司Mercor因LiteLLM开源库后门遭攻击，4TB数据泄露。Lapsus$声称窃取939GB源代码。事件引发对AI开发工具链供应链安全的广泛讨论，数千家公司可能受影响。</p>
+                    <h3 class="news-title">LLM是否将取代传统网站？</h3>
+                    <p class="news-desc">OpenAI社区热议：随着LLM成为信息获取主要界面，传统网站角色正在转变。讨论是否应为AI优化网站结构，以及大模型时代内容分发的未来形态。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://www.fortune.com/2026/04/02/mercor-ai-startup-security-incident-10-billion/" target="_blank">Fortune</a>
+                        <a href="https://community.openai.com/t/are-llms-replacing-the-traditional-website-model/1375427" target="_blank">OpenAI社区</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
+                            <span class="tag 硬件">硬件</span>
                         </div>
                     </div>
-                    <h3 class="news-title">2026 AI价格战：模型成本暴跌10倍，如何重建AI技术栈？</h3>
-                    <p class="news-desc">Anthropic将Claude价格下调67%，从$60/M tokens降至$1-2，DeepSeek推动全球价格战。企业如何抓住成本红利重建AI架构成为行业热议话题。</p>
+                    <h3 class="news-title">2026年AI编程基准测试对比</h3>
+                    <p class="news-desc">2026年3月基准测试：Claude Opus 4.6在SWE-bench达80.8%，GPT-5.4在Terminal-Bench达75.1%，Gemini 3.1 Pro在ARC-AGI-2达77.1%，Qwen3.6-Plus在Claw-Eval与Claude Opus 4.5同梯队，国产模型编程能力显著提升。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://www.aimagicx.com/blog/ai-pricing-war-llm-cost-collapse-business-strategy-2026" target="_blank">AI MagicX</a>
+                        <a href="https://byteiota.com/ai-coding-benchmarks-2026-claude-vs-gpt-vs-gemini/" target="_blank">Byteiota</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
+                            <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">云端商用vs端侧开源：AI竞争进入双轨时代</h3>
-                    <p class="news-desc">微软MAI模型仅限Azure商用，谷歌Gemma 4走Apache 2.0开源端侧路线。同日发布截然不同战略，引发社区对"封闭商用 vs 开放生态"路径选择的深度讨论。</p>
+                    <h3 class="news-title">算力通胀与定价回归</h3>
+                    <p class="news-desc">阿里云宣布4月涨价，算力供需失衡导致算力回归真实定价。随着AI应用规模化，算力成本成为企业核心关注点，行业从"补贴大战"进入理性定价阶段。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7624684248703795731/" target="_blank">头条财经</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">2026年18款AI工具正在成为"新常态"</h3>
-                    <p class="news-desc">行业盘点显示，ChatGPT CarPlay语音模式、Midjourney V7、Cursor AI编程等18款工具已从尝鲜走向日常。AI正渗透编码、设计、写作、研究等各个环节，"没有AI的工作流"将越来越少。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="http://www.moneycontrol.com/shorts/technology/18-ai-tools-in-2026-that-are-becoming-the-new-normal-across-coding-design-writing-research-and-more" target="_blank">Moneycontrol</a>
+                        <a href="https://caifuhao.eastmoney.com/news/20260329161115896682340" target="_blank">东方财富</a>
                     </div>
                 </article>
             </div>
         </section>
         
         <footer>
-            <p>🦞 <strong>GLOBAL AI DAILY</strong> | 每天更新 | 数据来源：OpenAI、Google、阿里、智谱、Fortune、Crunchbase、CSDN、经济观察网、人民政协网等</p>
+            <p>🦞 <strong>GLOBAL AI DAILY</strong> | 每天更新 | 数据来源：OpenAI、Google DeepMind、Anthropic、Microsoft、阿里云、智谱AI、NVIDIA、Bloomberg、36氪、甲子光年等</p>
         </footer>
     </div>
     
     <script>
-        // Toggle category visibility
         function toggleCategory(categoryId) {
             const section = document.getElementById(categoryId);
             const content = section.querySelector('.category-content');
@@ -997,19 +935,15 @@
             header.classList.toggle('collapsed');
         }
         
-        // Navigation buttons
         document.querySelectorAll('.nav-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const category = this.dataset.category;
                 
-                // Update active state
                 document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
                 
-                // Scroll to category
                 const section = document.getElementById(category);
                 if (section) {
-                    // Expand if collapsed
                     const content = section.querySelector('.category-content');
                     const header = section.querySelector('.category-header');
                     if (content.classList.contains('collapsed')) {
@@ -1022,7 +956,6 @@
             });
         });
         
-        // Initial animation
         document.querySelectorAll('.category-section').forEach((section, index) => {
             section.style.animationDelay = `${0.1 * index}s`;
         });

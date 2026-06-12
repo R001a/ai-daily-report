@@ -36,6 +36,7 @@
             overflow-x: hidden;
         }
         
+        /* Animated Background */
         .bg-grid {
             position: fixed;
             top: 0;
@@ -88,6 +89,7 @@
             z-index: 1;
         }
         
+        /* Header */
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -136,6 +138,7 @@
             font-size: 0.9em;
         }
         
+        /* Stats Bar */
         .stats-bar {
             display: flex;
             justify-content: center;
@@ -187,6 +190,7 @@
             color: var(--text-secondary);
         }
         
+        /* Summary */
         .summary-section {
             background: linear-gradient(135deg, rgba(0, 245, 255, 0.1), rgba(168, 85, 247, 0.1));
             border: 1px solid var(--border-glow);
@@ -236,6 +240,7 @@
             line-height: 1.5;
         }
         
+        /* Category Navigation */
         .category-nav {
             display: flex;
             justify-content: center;
@@ -285,6 +290,7 @@
             font-family: 'JetBrains Mono', monospace;
         }
         
+        /* Category Sections */
         .category-section {
             margin-bottom: 30px;
             animation: fadeInUp 0.6s ease-out both;
@@ -310,7 +316,7 @@
         .category-header.新品 { border-left: 4px solid var(--accent-pink); }
         .category-header.行业 { border-left: 4px solid var(--accent-cyan); }
         .category-header.商业 { border-left: 4px solid var(--accent-green); }
-        .category-header.创业 { border-left: 4px solid var(--accent-orange); }
+        .category-header.学术 { border-left: 4px solid var(--accent-orange); }
         .category-header.讨论 { border-left: 4px solid var(--accent-purple); }
         
         .category-title {
@@ -358,6 +364,7 @@
             opacity: 0;
         }
         
+        /* News Cards */
         .news-card {
             background: var(--bg-card);
             border-radius: 16px;
@@ -477,6 +484,7 @@
             font-size: 1em;
         }
         
+        /* Footer */
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -489,6 +497,7 @@
             text-decoration: none;
         }
         
+        /* Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 2em; }
             .stats-bar { gap: 10px; }
@@ -497,6 +506,7 @@
             .nav-btn { padding: 10px 16px; font-size: 0.85em; }
         }
         
+        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -526,7 +536,7 @@
             <h1>全球AI动态日报</h1>
             <div class="subtitle">
                 <span>🌍 汇聚全球AI资讯</span>
-                <span class="date-badge">2026.05.17</span>
+                <span class="date-badge">2026.06.12</span>
             </div>
         </header>
         
@@ -541,22 +551,22 @@
             <div class="stat-card">
                 <span class="stat-icon">🇨🇳</span>
                 <div class="stat-info">
-                    <div class="stat-number">11</div>
+                    <div class="stat-number">16</div>
                     <div class="stat-label">国内动态</div>
                 </div>
             </div>
             <div class="stat-card">
                 <span class="stat-icon">🌍</span>
                 <div class="stat-info">
-                    <div class="stat-number">10</div>
+                    <div class="stat-number">5</div>
                     <div class="stat-label">国外动态</div>
                 </div>
             </div>
             <div class="stat-card">
                 <span class="stat-icon">🔥</span>
                 <div class="stat-info">
-                    <div class="stat-number">5</div>
-                    <div class="stat-label">热门话题</div>
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">核心要闻</div>
                 </div>
             </div>
         </div>
@@ -565,28 +575,28 @@
             <h2>📋 今日要闻速览</h2>
             <div class="summary-grid">
                 <div class="summary-item">
-                    <strong>🚀 荣耀发布AgenticOS</strong>
-                    <p>荣耀AI首席科学家黄非宣布AI原生通用智能体操作系统AgenticOS，计划10月随MagicOS 11发布</p>
+                    <strong>🚀 CVPR 2026中国崛起</strong>
+                    <p>中国高校占据论文接收Top10八席，中国团队包揽四项竞赛全部冠军</p>
                 </div>
                 <div class="summary-item">
-                    <strong>📡 三大运营商齐发Token服务</strong>
-                    <p>世界电信日，上海移动推出1元40万Tokens通用服务，三大运营商集体入局AI算力赛道</p>
+                    <strong>⚽ 千问双产品落地</strong>
+                    <p>上线足球预测AI助手+免费高考志愿填报Agent，覆盖民生场景</p>
                 </div>
                 <div class="summary-item">
-                    <strong>🤖 杭州国家级具身智能基地揭牌</strong>
-                    <p>全国唯一面向具身智能的国家级应用中试基地在杭州启用，130+台机器人已"入学"</p>
+                    <strong>💰 Kimi估值暴增</strong>
+                    <p>Kimi半年估值从43亿飙升至300亿美元，增长6倍</p>
                 </div>
                 <div class="summary-item">
-                    <strong>💰 Cerebras IPO首日暴涨68%</strong>
-                    <p>全球最大AI芯片公司Cerebras登陆纳斯达克，募资55.5亿美元，市值突破670亿美元</p>
+                    <strong>🌐 美团AI浏览器上线</strong>
+                    <p>Tabbit 1.0正式发布，内置多模型支持完整Agent能力</p>
                 </div>
                 <div class="summary-item">
-                    <strong>⚔️ AI编程补贴战爆发</strong>
-                    <p>OpenAI与Anthropic同日开战：2个月免费试用对阵50%用量提升，争夺开发者生态入口</p>
+                    <strong>🖥️ Agent引爆CPU需求</strong>
+                    <p>英特尔：至强6+单颗支持1000+Agent，CPU需求增长5倍</p>
                 </div>
                 <div class="summary-item">
-                    <strong>🌾 四项农业大模型集中发布</strong>
-                    <p>北京农业人工智能发展大会发布知天世界等四项农业大模型，AI育种周期缩短60%</p>
+                    <strong>🎯 腾讯谈AI下半场</strong>
+                    <p>姚顺雨：找对问题比堆模型参数更重要</p>
                 </div>
             </div>
         </section>
@@ -599,18 +609,18 @@
                 <span class="icon">📊</span> 行业资讯 <span class="count">5</span>
             </button>
             <button class="nav-btn" data-category="商业">
-                <span class="icon">💼</span> 商业运用 <span class="count">4</span>
+                <span class="icon">💼</span> 商业融资 <span class="count">3</span>
             </button>
-            <button class="nav-btn" data-category="创业">
-                <span class="icon">💰</span> 创业模式 <span class="count">4</span>
+            <button class="nav-btn" data-category="学术">
+                <span class="icon">🔬</span> 学术研究 <span class="count">4</span>
             </button>
             <button class="nav-btn" data-category="讨论">
-                <span class="icon">💬</span> 讨论热点 <span class="count">4</span>
+                <span class="icon">💬</span> 热点讨论 <span class="count">3</span>
             </button>
         </nav>
         
         <section class="category-section" id="新品">
-            <div class="category-header" onclick="toggleCategory('新品')">
+            <div class="category-header 新品" onclick="toggleCategory('新品')">
                 <div class="category-title">
                     <span class="icon">🚀</span>
                     <h2>新品动态</h2>
@@ -625,11 +635,11 @@
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">荣耀发布AgenticOS：AI原生通用智能体操作系统</h3>
-                    <p class="news-desc">荣耀AI首席科学家黄非在搜狐科技年度论坛上宣布，AI正在从工具进化为操作系统。AgenticOS计划2026年10月随MagicOS 11一同发布，支持意图理解、多智能体协同、多模态感知和语义交互。</p>
+                    <h3 class="news-title">千问上线足球预测AI助手，融合天气地貌大数据</h3>
+                    <p class="news-desc">2026美加墨世界杯开赛在即，千问今日上线首个足球预测AI助手，融合历史数据、球员伤情、比赛地天气海拔等大数据预测比赛结果，同时发起公益活动为乡村学校捐建足球场。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://m.sohu.com/a/1023902398_362225/" target="_blank">搜狐科技</a>
+                        <a href="https://m.leiphone.com/category/industrynews/rlbyFXSP1xl2Mrvo.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -640,11 +650,11 @@
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">上海移动推出Token通用服务：1元可购40万Tokens</h3>
-                    <p class="news-desc">5月17日世界电信日，中国移动上海公司发布Token通用服务，实现"一号通用、跨平台使用、话费支付"，联合腾讯推出AI原生工作台，标志着运营商从"卖连接"向"卖AI服务"转型。</p>
+                    <h3 class="news-title">千问推出免费高考志愿填报Agent</h3>
+                    <p class="news-desc">千问上线国内首个全周期高考志愿填报Agent，具备志愿报告、日历、问答三大核心能力，基于大模型和8年数据积累免费提供定制规划，同类服务市场价超5000元。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://tech.ifeng.com/c/8tD3UyCZ6Ai" target="_blank">凤凰网科技</a>
+                        <a href="https://www.leiphone.com/category/industrynews/cj4WQEtTIBvX5Lb6.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -655,33 +665,33 @@
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">四项农业大模型集中发布，AI育种周期缩短60%</h3>
-                    <p class="news-desc">北京农业人工智能发展大会发布知天世界大模型、育繁推一体化管理大模型、荔知君大模型和智慧棉田精准管控系统，覆盖智能育种、智慧种植与精准管控，覆盖6000万亩农田。</p>
+                    <h3 class="news-title">美团Tabbit 1.0 AI浏览器正式上线</h3>
+                    <p class="news-desc">美团AI原生浏览器Tabbit 1.0正式上线，增强Agent能力，内置LongCat、DeepSeek、智谱、Kimi多款大模型，支持用户记忆功能，标准版永久免费，专业版每周仅9.9元。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7641046434934047278/" target="_blank">光明网</a>
+                        <a href="https://www.leiphone.com/category/industrynews/CUaS5ZOnMSrwjs7u.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国内">国内</span>
-                            <span class="tag new">NEW</span>
+                            <span class="tag 国外">国外</span>
+                            <span class="tag 硬件">硬件</span>
                         </div>
                     </div>
-                    <h3 class="news-title">潜江AI剥虾机器人惊艳登场：1.7秒剥虾保虾黄</h3>
-                    <p class="news-desc">湖北潜江龙虾产业博览会上，搭载自研AI触觉传感器的智能剥虾设备亮相，通过视觉识别虾的大小与形态，1.7秒完成剥虾且保留完整虾黄，单台设备效率抵18名熟练工。</p>
+                    <h3 class="news-title">英特尔至强6+发布，单颗支持1000+Agent</h3>
+                    <p class="news-desc">英特尔发布首款18A制程至强6+，最高288核，通过QAT/IAA技术优化KV Cache，单颗可支持1000+智能体部署，头部大模型厂CPU需求一年内增长5倍。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7641143911893746228/" target="_blank">今日头条</a>
+                        <a href="https://www.leiphone.com/category/chips/8QdT8eNj1uWJ7cQt.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
             </div>
         </section>
         
         <section class="category-section" id="行业">
-            <div class="category-header" onclick="toggleCategory('行业')">
+            <div class="category-header 行业" onclick="toggleCategory('行业')">
                 <div class="category-title">
                     <span class="icon">📊</span>
                     <h2>行业资讯</h2>
@@ -696,26 +706,26 @@
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">杭州国家级具身智能中试基地正式揭牌</h3>
-                    <p class="news-desc">5月16日，全国唯一面向具身智能的国家级应用中试基地在杭州滨江揭牌，已有130+台机器人覆盖餐饮、无人零售、电力巡检等30+职业场景，企业场景开发成本可降低80%。</p>
+                    <h3 class="news-title">CVPR 2026：中国高校占据Top10八席</h3>
+                    <p class="news-desc">CVPR 2026投稿量16092篇创纪录，同比增24%，核心趋势转向具身智能。中国高校论文接收Top10中占据八席，上海交大46篇高居第一。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://www.globaltimes.cn/page/202605/1361125.shtml" target="_blank">环球时报</a>
+                        <a href="https://www.leiphone.com/category/ai/dD8WSfVt3bwq1sEe.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 硬件">硬件</span>
+                            <span class="tag 国内">国内</span>
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">Cerebras IPO首日暴涨68%，市值突破670亿美元</h3>
-                    <p class="news-desc">AI芯片公司Cerebras Systems以每股185美元登陆纳斯达克，首日收盘涨68%至311美元，募资55.5亿美元，成为2026年以来全球最大规模IPO，被视为英伟达的有力挑战者。</p>
+                    <h3 class="news-title">中国企业全产业链参展CVPR</h3>
+                    <p class="news-desc">CVPR 2026展会上，中国企业覆盖互联网、大模型、机器人全产业链，腾讯成为顶级赞助商，中国团队在GigaBrain挑战赛包揽四项全部冠军。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://finance.sina.com.cn/stock/t/2026-05-16/doc-inhxzzuv4729017.shtml" target="_blank">新浪财经</a>
+                        <a href="https://www.leiphone.com/category/ai/dD8WSfVt3bwq1sEe.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -725,25 +735,11 @@
                             <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">智元机器人远征A3实现万台量产下线</h3>
-                    <p class="news-desc">智元机器人宣布"远征A3"通用具身机器人实现万台量产，仅用15个月完成从千台到万台的十倍产能跨越，刷新全球人形机器人量产速度纪录，2026年目标完成数万台量产。</p>
+                    <h3 class="news-title">Kimi估值半年暴涨6倍至300亿美元</h3>
+                    <p class="news-desc">月之暗面Kimi开启新一轮融资，投前估值达到300亿美元，较去年12月的43亿美元半年增长6倍，估值超越MiniMax，仅次于智谱和DeepSeek。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://news.fromgeek.com/tech/160-241179.html" target="_blank">极客网</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">Google I/O 2026开幕在即，Gemini 4与Omni视频模型备受期待</h3>
-                    <p class="news-desc">Google I/O 2026将于5月19日开幕，预计发布Gemini 4（或3.x Ultra），支持1000万+Token上下文窗口和原生端到端多模态。Omni视频生成模型也有望首次亮相。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://www.techtimes.com/articles/316755/20260517/google-i-o-2026-keynote-opens-tuesday-new-gemini-lands-behind-mythos-gpt-55.htm" target="_blank">TechTimes</a>
+                        <a href="https://www.leiphone.com/category/zaobao/Zdoluye1L8P5aQJJ.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -753,21 +749,35 @@
                             <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">李想划定具身智能路线图：自动驾驶上半场，人形机器人下半场</h3>
-                    <p class="news-desc">理想汽车CEO李想提出具身智能"产业阶段论"：2023-2028年L3自动驾驶为主流，2028-2033年实现L4；2030-2035年人形机器人达6岁泛化能力，2040年前后接近AGI水平。</p>
+                    <h3 class="news-title">滴滴率先接入微信AI生态</h3>
+                    <p class="news-desc">滴滴成为微信AI生态首批合作伙伴，用户可直接在微信AI中唤起叫车服务，全程不跳转，顺风车、代驾后续也将接入。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640697143115776552/" target="_blank">今日头条</a>
+                        <a href="https://www.leiphone.com/category/transportation/gb1m547vcoMiTJRR.html" target="_blank">雷峰网</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-header">
+                        <div class="news-tags">
+                            <span class="tag 国内">国内</span>
+                        </div>
+                    </div>
+                    <h3 class="news-title">腾讯云发布效率智能体工具集</h3>
+                    <p class="news-desc">腾讯云发布效率智能体工具集，覆盖20+垂直场景，推出WorkBuddy企业版AI工作台，升级智能体开发平台ADP，支持Workflow与Agent双向互调。</p>
+                    <div class="news-source">
+                        <span class="icon">🔗</span>
+                        <a href="https://www.leiphone.com/category/industrynews/e6NKPw4t7jJlxPpd.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
             </div>
         </section>
         
         <section class="category-section" id="商业">
-            <div class="category-header" onclick="toggleCategory('商业')">
+            <div class="category-header 商业" onclick="toggleCategory('商业')">
                 <div class="category-title">
                     <span class="icon">💼</span>
-                    <h2>商业运用</h2>
+                    <h2>商业融资</h2>
                 </div>
                 <span class="toggle-icon">▼</span>
             </div>
@@ -775,43 +785,15 @@
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 国外">国外</span>
+                            <span class="tag 国内">国内</span>
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">AI编程补贴战爆发：OpenAI vs Anthropic正面交锋</h3>
-                    <p class="news-desc">5月16日，OpenAI宣布企业用户从竞品迁移至Codex可获2个月免费用量；Anthropic迅速回击，将Claude Code每周使用上限提高50%。补贴战标志着AI编程工具竞争从"谁更强"转向"谁更舍得补贴"。</p>
+                    <h3 class="news-title">"知天下"获天使轮融资专注3D高斯泼溅</h3>
+                    <p class="news-desc">世界模型初创公司知天下完成天使轮融资，由上海众合创投独家投资，资金用于扩充团队研发生成式高斯基模，开拓3D重建技术海外影响力。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640861074555716096/" target="_blank">AI拾贝人</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">Anthropic敲定300亿美元融资，估值达9000亿美元</h3>
-                    <p class="news-desc">Anthropic已就300亿美元新一轮融资达成最终条款，由红杉资本、Dragoneer、Greenoaks、Altimeter Capital联合领投，投后估值达9000亿美元，超越OpenAI成为全球估值最高的私营科技公司。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://finance.sina.com.cn/jjxw/2026-05-15/doc-inhxyimh8138621.shtml" target="_blank">新浪财经</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">英伟达2026年AI投资超400亿美元，重仓OpenAI</h3>
-                    <p class="news-desc">英伟达2026年对AI产业股权投资总额突破400亿美元，其中对OpenAI单笔注资300亿美元为最大交易。此外还向康宁投资32亿美元、IREN投资21亿美元，完善全链条布局。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://g.pconline.com.cn/x/2147/21478131.html" target="_blank">太平洋科技</a>
+                        <a href="https://www.leiphone.com/category/zaobao/Zdoluye1L8P5aQJJ.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -819,23 +801,39 @@
                     <div class="news-header">
                         <div class="news-tags">
                             <span class="tag 国内">国内</span>
+                            <span class="tag 硬件">硬件</span>
                         </div>
                     </div>
-                    <h3 class="news-title">国产大模型融资加速：DeepSeek估值逼近450亿美元</h3>
-                    <p class="news-desc">DeepSeek获国家大基金领投磋商，估值逼近450亿美元；月之暗面(Kimi)完成新一轮20亿美元融资，投后估值突破200亿美元。国产大模型进入价值重估阶段。</p>
+                    <h3 class="news-title">瑞浦兰钧AIDC储能电芯年底量产</h3>
+                    <p class="news-desc">瑞浦兰钧发布85Ah AIDC储能电芯，针对智算中心优化，计划年底量产，已送样给阿里、腾讯等终端客户，钠离子电芯预计明年量产。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640712423413924352/" target="_blank">今日头条</a>
+                        <a href="https://www.leiphone.com/category/transportation/mOmmRp3HA5LMXY70.html" target="_blank">雷峰网</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-header">
+                        <div class="news-tags">
+                            <span class="tag 国内">国内</span>
+                            <span class="tag 开源">开源</span>
+                        </div>
+                    </div>
+                    <h3 class="news-title">StoreClab打造跨境电商AI运营系统</h3>
+                    <p class="news-desc">StoreClaw定位跨平台跨境电商AI运营产品，整合多平台数据，将运营经验沉淀为可调用AI Skill，自动化完成多环节工作，降低卖家成本提升效率。</p>
+                    <div class="news-source">
+                        <span class="icon">🔗</span>
+                        <a href="https://www.leiphone.com/category/industrynews/b0TuuC0QsZerbmzN.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
             </div>
         </section>
         
-        <section class="category-section" id="创业">
-            <div class="category-header" onclick="toggleCategory('创业')">
+        <section class="category-section" id="学术">
+            <div class="category-header 学术" onclick="toggleCategory('学术')">
                 <div class="category-title">
-                    <span class="icon">💰</span>
-                    <h2>创业模式</h2>
+                    <span class="icon">🔬</span>
+                    <h2>学术研究</h2>
                 </div>
                 <span class="toggle-icon">▼</span>
             </div>
@@ -843,29 +841,45 @@
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
-                            <span class="tag 开源">开源</span>
+                            <span class="tag 国外">国外</span>
                             <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">Claude Code论文流水线开源：GitHub星标6.4k</h3>
-                    <p class="news-desc">基于Claude Code的学术研究技能包ARS正式开源，打包32个智能体流水线覆盖论文全流程，单篇论文把关成本仅4-6美元，在GitHub迅速获得6.4k星标，引发科研社区广泛关注。</p>
+                    <h3 class="news-title">CVPR最佳论文：D4RT提速4D重建300倍</h3>
+                    <p class="news-desc">Google DeepMind的D4RT获CVPR 2026最佳论文，实现动态场景4D重建，比前代方法快300倍，为具身机器人动态感知奠定技术基础。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640708327596474907/" target="_blank">今日头条</a>
+                        <a href="https://m.leiphone.com/category/ai/dvz76xNimms03Mgz.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
                 <article class="news-card">
                     <div class="news-header">
                         <div class="news-tags">
+                            <span class="tag 国外">国外</span>
+                            <span class="tag new">NEW</span>
+                        </div>
+                    </div>
+                    <h3 class="news-title">Mapping Networks：参数量降500倍性能反超</h3>
+                    <p class="news-desc">印度研究者提出低维流形映射方法，训练参数量降低200-500倍，在多项CV任务中性能反超全参数训练基线，入选CVPR 2026最佳论文候选。</p>
+                    <div class="news-source">
+                        <span class="icon">🔗</span>
+                        <a href="https://www.leiphone.com/category/ai/lImyKQQFskC3B1Bx.html" target="_blank">雷峰网</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-header">
+                        <div class="news-tags">
+                            <span class="tag 国内">国内</span>
                             <span class="tag 开源">开源</span>
                         </div>
                     </div>
-                    <h3 class="news-title">多智能体与推理研究论文集中发布</h3>
-                    <p class="news-desc">arXiv涌现多篇智能体建模、并行推理、内存机制及多智能体协作论文，包括Orchard开源智能体框架、OpenDeepThink并行推理方法、Beyond Individual Intelligence多智能体系统综述等。</p>
+                    <h3 class="news-title">复旦GuidedVLA提升机器人可解释性</h3>
+                    <p class="news-desc">复旦大学提出GuidedVLA，拆分目标/阶段/空间三类注意力头，提升机器人VLA动作生成可控性，真实实验成功率从55.8%提升到75.8%，已开源。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640710539996152354/" target="_blank">今日头条</a>
+                        <a href="https://www.leiphone.com/category/ai/BOuZx0Z8ALLO18p8.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -875,35 +889,21 @@
                             <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">福布斯中国AI 50强发布：北京21家领跑</h3>
-                    <p class="news-desc">福布斯发布中国AI 50强榜单，北京以21家企业领跑。智谱GLM-5.1、月之暗面Kimi 2.6、DeepSeek V4三大旗舰在代码、数学、长上下文、智能体四大维度全面逼近国际一线。</p>
+                    <h3 class="news-title">UniRefiner清理ViT特征图伪特征</h3>
+                    <p class="news-desc">西安交大研究者发现大规模VLM细粒度能力被特征图伪特征掩盖，提出register分流技术，zero-shot分割mIoU最高提升近22个百分点。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7641028283349352970/" target="_blank">今日头条</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国内">国内</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">国产大模型逼近国际一线：Kimi K2.6登顶排行榜</h3>
-                    <p class="news-desc">2026年5月大模型排行榜显示，Kimi K2.6以94.3分登顶，DeepSeek V4以93.8分紧随其后，OpenAI GPT-5以93.5分排名第三。前六名中国产模型占据四席。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640360539369865763/" target="_blank">今日头条</a>
+                        <a href="https://www.leiphone.com/category/ai/UpJfyIuhRAkSim2v.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
             </div>
         </section>
         
         <section class="category-section" id="讨论">
-            <div class="category-header" onclick="toggleCategory('讨论')">
+            <div class="category-header 讨论" onclick="toggleCategory('讨论')">
                 <div class="category-title">
                     <span class="icon">💬</span>
-                    <h2>讨论热点</h2>
+                    <h2>热点讨论</h2>
                 </div>
                 <span class="toggle-icon">▼</span>
             </div>
@@ -912,13 +912,14 @@
                     <div class="news-header">
                         <div class="news-tags">
                             <span class="tag 国外">国外</span>
+                            <span class="tag 硬件">硬件</span>
                         </div>
                     </div>
-                    <h3 class="news-title">GPT-5.6启动内部测试，长时记忆成 headline 特性</h3>
-                    <p class="news-desc">OpenAI在GPT-5.5发布仅三周后，下一代模型GPT-5.6已进入内部测试阶段。Sam Altman公开透露其核心特性为长时记忆——不是会话级记忆，而是跨会话的持久记忆能力。</p>
+                    <h3 class="news-title">Agent时代CPU:GPU配比从1:8走向1:1</h3>
+                    <p class="news-desc">Agent爆发导致CPU需求暴增，英特尔透露某头部大模型厂商CPU需求一年内增长5倍，CPU:GPU配比已经从传统1:8走向1:2甚至1:1。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="https://lumichats.com/blog/google-io-2026-gpt-6-release-date-googlebook-gemini-4-preview" target="_blank">LumiChats</a>
+                        <a href="https://www.leiphone.com/category/chips/8QdT8eNj1uWJ7cQt.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -928,25 +929,11 @@
                             <span class="tag 国内">国内</span>
                         </div>
                     </div>
-                    <h3 class="news-title">物理AI密集催化：英伟达、特斯拉集体All In</h3>
-                    <p class="news-desc">2026年5月物理AI迎来密集催化信号：英伟达与LG电子达成人形机器人合作，推动Alpamayo自动驾驶模型量产；特斯拉"世界模拟器"持续迭代。黄仁勋多次强调"物理AI是AI下一个十年核心"。</p>
+                    <h3 class="news-title">姚顺雨：AI下半场找对问题更重要</h3>
+                    <p class="news-desc">从OpenAI加盟腾讯的首席科学家姚顺雨认为，AI下半场技术不再是瓶颈，难点在于找对真实问题，需要产品模型协同设计，而非单纯刷榜堆参数。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640698897655972358/" target="_blank">今日头条</a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="news-header">
-                        <div class="news-tags">
-                            <span class="tag 国外">国外</span>
-                        </div>
-                    </div>
-                    <h3 class="news-title">OpenAI成立40亿美元部署咨询公司</h3>
-                    <p class="news-desc">OpenAI推出OpenAI Deployment Company，一家独立咨询实体，获得TPG等19家私募股权公司超40亿美元支持，直接回应其在企业市场份额被Anthropic侵蚀的挑战。</p>
-                    <div class="news-source">
-                        <span class="icon">🔗</span>
-                        <a href="https://www.baus.ai/blog/ai-news-roundup-may-16-2026" target="_blank">Baus AI</a>
+                        <a href="https://www.leiphone.com/category/industrynews/e6NKPw4t7jJlxPpd.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
                 
@@ -954,25 +941,26 @@
                     <div class="news-header">
                         <div class="news-tags">
                             <span class="tag 国内">国内</span>
+                            <span class="tag new">NEW</span>
                         </div>
                     </div>
-                    <h3 class="news-title">AI+教育：2026世界数字教育大会发布多项成果</h3>
-                    <p class="news-desc">大会发布《中国智慧教育发展报告(2025-2026)》《人工智能教育应用系统》等多项成果，确立覆盖关键技术、"教学评"场景与安全伦理的AI教育应用系统参考框架。</p>
+                    <h3 class="news-title">CVPR趋势：CV从感知走向具身</h3>
+                    <p class="news-desc">本届CVPR明确趋势：计算机视觉从被动感知走向主动理解与行动，具身智能成为绝对主线，视觉-语言论文占比一年增长5.7个百分点。</p>
                     <div class="news-source">
                         <span class="icon">🔗</span>
-                        <a href="http://m.toutiao.com/group/7640803175083049515/" target="_blank">今日头条</a>
+                        <a href="https://m.leiphone.com/category/ai/dvz76xNimms03Mgz.html" target="_blank">雷峰网</a>
                     </div>
                 </article>
             </div>
         </section>
         
         <footer>
-            <p>🦞 <strong>GLOBAL AI DAILY</strong> | 每天更新 | 数据来源：OpenAI、Google DeepMind、Anthropic、新浪财经、TechTimes、环球时报、极客网等</p>
-            <p style="margin-top:10px; font-size:0.85em;">生成时间：2026-05-18 17:00 CST | 昨日日期：2026-05-17</p>
+            <p>🦞 <strong>GLOBAL AI DAILY</strong> | 2026年6月12日 更新 | 数据来源：雷峰网</p>
         </footer>
     </div>
     
     <script>
+        // Toggle category visibility
         function toggleCategory(categoryId) {
             const section = document.getElementById(categoryId);
             const content = section.querySelector('.category-content');
@@ -982,15 +970,19 @@
             header.classList.toggle('collapsed');
         }
         
+        // Navigation buttons
         document.querySelectorAll('.nav-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const category = this.dataset.category;
                 
+                // Update active state
                 document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
                 
+                // Scroll to category
                 const section = document.getElementById(category);
                 if (section) {
+                    // Expand if collapsed
                     const content = section.querySelector('.category-content');
                     const header = section.querySelector('.category-header');
                     if (content.classList.contains('collapsed')) {
@@ -1003,6 +995,7 @@
             });
         });
         
+        // Initial animation
         document.querySelectorAll('.category-section').forEach((section, index) => {
             section.style.animationDelay = `${0.1 * index}s`;
         });
